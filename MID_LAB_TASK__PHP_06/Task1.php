@@ -4,7 +4,19 @@
 
 		$name 		=  $_POST['myname'];
 		$password	=  $_POST['password'];
-
+		if (preg_match('/^[a-zA-Z]+[a-zA-Z0-9._]+$/', $name) && strlen($name)>=2 ) {
+           
+            if ( strpos($pass, '@') || strpos($pass, '#') || strpos($pass, '$') || strpos($pass, '%') && $pass<8){
+                echo $name."<br>";
+                echo $pass;
+            }
+            else {
+                echo "must contain 8 char and contain at least one of the special characters (@, #, $, %)";
+            }
+        }
+        else {
+            echo"must contain alpha numeric and '_' and contain atleat 2 character";
+        }
 		
 	}
 ?>
