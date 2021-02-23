@@ -2,9 +2,9 @@
 
 	if(isset($_POST['submit'])){
 
-		$Current password 		=  $_POST['cu_password'];
-		$New password			=  $_POST['new_password'];
-		$Retype New password	=  $_POST['re_password'];
+		$Current_password 		=  $_POST['cu_password'];
+		$New_password			=  $_POST['new_password'];
+		$Retype_New_password	=  $_POST['re_password'];
 
 		
 	}
