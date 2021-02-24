@@ -2,10 +2,16 @@
 
 	if(isset($_POST['submit'])){
 
-		$Current_password 		=  $_POST['cu_password'];
-		$New_password			=  $_POST['new_password'];
-		$Retype_New_password	=  $_POST['re_password'];
-
+		$current_password 		=  $_POST['current_password'];
+		$new_password			=  $_POST['new_password'];
+		$retype_New_password	=  $_POST['retype_New_password'];
+		
+		if ($current_password!=$new_password && $new_password==$current_password) {
+            echo"successfully changed";
+        }
+        else{
+            echo"new password shold not be the same as the current password ";
+        }
 		
 	}
 ?>
@@ -19,9 +25,9 @@
 	<form method="POST" action="#">
 		<fieldset>
 			<legend>CHANGE PASSWORD</legend>
-			Current password: 		<input type="password" name="cu_password" value=""> <br>
+			Current password: 		<input type="password" name="current_password" value=""> <br>
 			New password: 			<input type="password" name="new_password" value=""> <br>
-			Retype New password: 	<input type="password" name="re_password" value=""> <br>
+			Retype New password: 	<input type="password" name="retype_New_password" value=""> <br>
 									<input type="submit" name="submit" value="Submit">
 		</fieldset>
 	</form>
