@@ -1,1 +1,1 @@
-<!DOCTYPE html><html><head>	<title>Users Homepage</title></head><body>	<center>		<h1>Welcome Anne!</h1>		<a href="profile.html">Profile</a>		<br/>		<a href="change_password.html">Change Password</a>		<br/>		<a href="login.html">Logout</a>		</center></body></html>
+<!DOCTYPE html><html><head>	<title>Users Homepage</title></head><body>	<center>		<h1>Welcome Anne!</h1>		<a href="profile.html">Profile</a>		<br/>		<a href="change_password.html">Change Password</a>		<br/>		<a href="../controller/login.html">Logout</a>		</center></body></html>
