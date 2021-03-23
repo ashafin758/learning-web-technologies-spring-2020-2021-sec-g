@@ -1,7 +1,7 @@
 <?php 
     require_once('../model/productModel.php');
 
-    if(isset($_POST['submit'])){
+   if(isset($_POST['submit'])){
 
 		$name 	= $_POST['product_name'];
 		$bprice 	= $_POST['buying_price'];
@@ -14,8 +14,8 @@
 
 				$products = [	
 							'name'	=> $name, 
-							'buying_price'=> $bprice, 
-							'selling_price'=>$sprice, 
+							'bprice'=> $bprice, 
+							'sprice'=>$sprice, 
 						];
 				
 				$status = insertProduct($products);				
