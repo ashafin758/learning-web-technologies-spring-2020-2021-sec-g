@@ -1,3 +1,4 @@
+  
 -- phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
@@ -5,7 +6,7 @@
 -- Host: 127.0.0.1
 -- Generation Time: Mar 23, 2021 at 04:24 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,12 +29,41 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `products` (
+  `ID` int(50) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `buying_price` varchar(50) NOT NULL,
-  `selling_price` varchar(50) NOT NULL,
-  `profit` int(50) NOT NULL,
-  `displayable` varchar(10) NOT NULL
+  `buyingPrice` varchar(50) NOT NULL,
+  `sellingPrice` varchar(50) NOT NULL,
+  `profit` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`ID`, `name`, `buyingPrice`, `sellingPrice`, `profit`) VALUES
+(2, 'HTC', '5000', '6000', '1000'),
+(3, 'Nokia', '4000', '8000', '4000'),
+(5, 'Samsung', '10000', '20000', '10000');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
