@@ -29,42 +29,31 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `products` (
-  `ID` int(50) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `buyingPrice` varchar(50) NOT NULL,
-  `sellingPrice` varchar(50) NOT NULL,
-  `profit` varchar(50) NOT NULL
+  `buying_price` varchar(50) NOT NULL,
+  `selling_price` varchar(50) NOT NULL,
+  `profit` varchar(50) NOT NULL,
+  `display` varchar(50) NOT NULL
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`ID`, `name`, `buyingPrice`, `sellingPrice`, `profit`) VALUES
-(2, 'HTC', '5000', '6000', '1000'),
-(3, 'Nokia', '4000', '8000', '4000'),
-(5, 'Samsung', '10000', '20000', '10000');
+INSERT INTO `products` (`name`, `buyingPrice`, `sellingPrice`, `profit`) VALUES
+('HTC', '5000', '6000', '1000'),
+('Nokia', '4000', '8000', '4000'),
+('Samsung', '10000', '20000', '10000');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
---
--- AUTO_INCREMENT for table `products`
---
-ALTER TABLE `products`
-  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
