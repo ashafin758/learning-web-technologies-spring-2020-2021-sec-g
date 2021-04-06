@@ -24,21 +24,36 @@
                             <tr>
                                 <td>Name</td>
                                 <td>:
-                                    <input type="text" name="name" id="name" value="" onkeyup="change()" />
-                                    <input type="button" name="" value="click" onclick="changeStyle()">
+                                    <input type="text" name="name" id="">
                                 </td>
                             </tr>
                             <script>
                                 function validate(){
-                                    
-                                         let name= document.getElementById('name').value;
+									let uname=document.getElementById('name').value;
+									let id=document.getElementById('id').value;
+									let email=document.getElementById('email').value;
+									let bloodGroup=document.getElementById('bloodGroup').value;
+									let phone=document.getElementById('phone').value;
+									let address=document.getElementById('address').value;
+									let password=document.getElementById('password').value;
+									let cPass=document.getElementById('cPass').value;
+									let gender=document.getElementById('gender');
+									let dob=document.getElementById('dob').value;
+									let profilePic=document.getElementById('profilePic').value;
+									let qualification=document.getElementById('qualification').value;
 
-                                         if(name == ''){
-                                             document.getElementById('myid').innerHTML = "null data...";
-                                         }else{
-                                            document.getElementById('myid').innerHTML = name;
-                                         }
-                                }
+									unameCheck();
+									idCheck();
+									mailCheck();
+									bloodGroupCheck();
+									phoneCheck();
+									addressCheck();
+									passwordCheck();
+									genderCheck();
+									dobCheck();
+									profilePicCheck();
+									qualificationCheck();
+																
                             </script>
                             <tr>
                                 <td colspan="2"><hr></td>
